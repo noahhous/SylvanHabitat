@@ -19,7 +19,7 @@
             container: 'map', // container id
             style: 'mapbox://styles/noahhous/ckf2nzs2s13nq19n4rp4lu8sd', // style URL
             center: [-82.658,35.197], // starting position [lng, lat]
-            zoom: 14 // starting zoom
+            zoom: 13 // starting zoom
             });
 
             
@@ -27,10 +27,11 @@
                 new mapboxgl.GeolocateControl({
                     positionOptions: {
                         enableHighAccuracy: true
-                },
-                trackUserLocation: true
+                    },
+                    trackUserLocation: true
                 })
-            );
+            )
+
 
             map.addControl(new mapboxgl.NavigationControl());
 
